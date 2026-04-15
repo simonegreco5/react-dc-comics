@@ -34,20 +34,53 @@ header{
     }
     
   }
+
+  .select{
+    color: rgb(26, 127, 229);
+  }
 }
 
-.select{
-  color: rgb(36, 158, 230);
-}
 
 main{
   background-color: black;
   color: white;
   min-height: 10rem;
-
+  
   div{
     text-align: center;
     padding: 4rem;
   }
 }
+
+footer{
+  background-color: rgb(26, 127, 229);
+
+  .buyBar{
+    display: flex;
+    justify-content: space-around;
+
+    div{
+      display: flex;
+      padding: 2rem 1rem;
+      align-items: center;
+      
+
+      img{
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 0.75rem;
+        font-size: 0.9rem;
+
+      }
+    }
+  }
+}
+
 

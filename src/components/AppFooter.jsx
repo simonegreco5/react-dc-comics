@@ -11,7 +11,7 @@ export default function AppFooter(){
         <footer>
 
             {/* barra orizzontale blu */}
-            <section>
+            <section className='buyBar'>
                 <div>
                     <img src={BuyDigital} alt="" />
                     <a href="">digital comics</a>
