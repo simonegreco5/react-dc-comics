@@ -11,7 +11,7 @@ export default function AppHeader(){
             {/* nav */}
             <nav>
                 <a href="">characters</a>
-                <a href="">comics</a>
+                <a className='select' href="">comics</a>
                 <a href="">movies</a>
                 <a href="">tv</a>
                 <a href="">games</a>
