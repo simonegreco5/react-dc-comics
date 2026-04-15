@@ -1,1 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+
+header{
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+  img{
+    padding: 1rem;
+  }
+  
+  nav{
+    margin-top: 3.5rem;
+
+    a{
+      padding: 0.5rem;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+  }
+}
