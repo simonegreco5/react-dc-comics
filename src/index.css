@@ -37,6 +37,7 @@ header{
 
   .select{
     color: rgb(26, 127, 229);
+    border-bottom: 5px solid rgb(26, 127, 229);
   }
 }
 
