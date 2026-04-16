@@ -35,9 +35,9 @@ export default function AppFooter(){
             </section>
 
             {/* sezione info con logo in background */}
-            <section>
+            <section className='linkSection'>
                 <div>
-                    <h3>DC COMICS</h3>
+                    <h3 className='dcComics'>DC COMICS</h3>
                     <a href="">Characters</a>
                     <a href="">Comics</a>
                     <a href="">Movies</a>
@@ -47,12 +47,12 @@ export default function AppFooter(){
                     <a href="">News</a>
                 </div>
                 <div>
-                    <h3>SHOP</h3>
+                    <h3 className='shop'>SHOP</h3>
                     <a href="">Shop DC</a>
                     <a href="">Shop DC Collect</a>
                 </div>
                 <div>
-                    <h3>DC</h3>
+                    <h3 className='dc'>DC</h3>
                     <a href="">Term Of Use</a>
                     <a href="">Privacy Policy</a>
                     <a href="">Ad Choices</a>
@@ -66,7 +66,7 @@ export default function AppFooter(){
                     <a href="">Contact Us</a>
                 </div>
                 <div>
-                    <h3>SITES</h3>
+                    <h3 className='sites'>SITES</h3>
                     <a href="">DC</a>
                     <a href="">MAD Magazine</a>
                     <a href="">DC Kids</a>

@@ -1,3 +1,4 @@
+@import url('bootstrap');
 *{
   margin: 0;
   padding: 0;
@@ -81,6 +82,29 @@ footer{
 
       }
     }
+  }
+
+  .linkSection{
+    background-image: url('./assets/img/footer-bg.jpg');
+    display: flex;
+
+    div{
+      display: flex;
+      flex-direction: column;
+      
+      padding: 1rem;
+
+      h3{
+        color: white;
+        font-size: 1.25rem;
+      }
+      a{
+        color: rgb(207, 207, 210);
+        text-decoration: none;
+        font-size: 0.7rem;
+      }
+    }
+    
   }
 }
 
