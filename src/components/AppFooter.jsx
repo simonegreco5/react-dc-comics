@@ -5,6 +5,13 @@ import BuySub from '../assets/img/buy-comics-subscriptions.png'
 import BuyShop from '../assets/img/buy-comics-shop-locator.png'
 import BuyVisa from '../assets/img/buy-dc-power-visa.svg'
 
+// sezione import social.png
+import Facebook from '../assets/img/footer-facebook.png'
+import Twitter from '../assets/img/footer-twitter.png'
+import Youtube from '../assets/img/footer-youtube.png'
+import Pinterest from '../assets/img/footer-pinterest.png'
+import Periscope from '../assets/img/footer-periscope.png'
+
 export default function AppFooter(){
 
     return(
@@ -72,6 +79,19 @@ export default function AppFooter(){
                     <a href="">DC Kids</a>
                     <a href="">DC Universe</a>
                     <a href="">DC Power Visa</a>
+                </div>
+            </section>
+
+            {/* sezione accesso + social */}
+            <section className='socialBar'>
+                <button>SIGN-UP NOW!</button>
+                <div className='icon'>
+                    <div>FOLLOW US</div>
+                    <a href=""><img src={Facebook} alt="" /></a>
+                    <a href=""><img src={Twitter} alt="" /></a>
+                    <a href=""><img src={Youtube} alt="" /></a>
+                    <a href=""><img src={Pinterest} alt="" /></a>
+                    <a href=""><img src={Periscope} alt="" /></a>
                 </div>
             </section>
         </footer>
