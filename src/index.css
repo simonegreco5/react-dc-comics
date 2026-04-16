@@ -38,7 +38,7 @@ header{
 
   .select{
     color: rgb(26, 127, 229);
-    border-bottom: 5px solid rgb(26, 127, 229);
+    /* border-bottom: 5px solid rgb(26, 127, 229); */
   }
 }
 
@@ -111,10 +111,31 @@ footer{
     display: flex;
     padding: 2rem;
 
+    button{
+      background-color: transparent;
+      color: white;
+      font-weight: 500;
+      border: 3px solid rgb(26, 127, 229);
+
+      div{
+        padding: 0.5rem;
+      }
+    }
+
     .icon{
       display: flex;
-      
-      
+      margin-left: auto;
+
+      div{
+        padding-right: 1rem;
+        margin-top: 0.9rem;
+        color: rgb(26, 127, 229);
+        font-weight: 700;
+      }
+      a{
+        padding: 0.5rem;
+      }
+
     }
   }
 }

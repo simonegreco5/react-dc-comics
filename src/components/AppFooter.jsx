@@ -84,7 +84,7 @@ export default function AppFooter(){
 
             {/* sezione accesso + social */}
             <section className='socialBar'>
-                <button>SIGN-UP NOW!</button>
+                <button><div>SIGN-UP NOW!</div></button>
                 <div className='icon'>
                     <div>FOLLOW US</div>
                     <a href=""><img src={Facebook} alt="" /></a>
