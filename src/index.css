@@ -48,10 +48,47 @@ main{
   color: white;
   min-height: 10rem;
   
-  div{
-    text-align: center;
-    padding: 4rem;
-  }
+      img{
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .banner{
+        background-color: rgb(26, 127, 229);
+        width: 15rem;
+        text-align: center;
+        padding: 1rem 0rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+        
+      }
+
+      .film{
+        text-align: center;
+
+        .listFilm{
+  
+          img{
+             
+          }
+          .titoloFilm{
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .bottone{
+        background-color: rgb(26, 127, 229);
+        border: none;
+        color: white;
+        font-weight: 600;
+        padding: 0.5rem 3rem;
+        align-items: center;
+      }
+  
 }
 
 footer{

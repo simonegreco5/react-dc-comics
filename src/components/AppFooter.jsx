@@ -94,6 +94,7 @@ export default function AppFooter(){
                     <a href=""><img src={Periscope} alt="" /></a>
                 </div>
             </section>
+            
         </footer>
     )
 }
