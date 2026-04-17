@@ -59,20 +59,28 @@ main{
         background-color: rgb(26, 127, 229);
         width: 15rem;
         text-align: center;
-        padding: 1rem 0rem;
+        padding: 0.5rem;
         font-weight: 700;
         font-size: 1.2rem;
-        
+        position: absolute;
+        translate: -50% -50%;
+        top: 0;
+        left: 15%;
       }
 
       .film{
         text-align: center;
+        background-color: rgb(32, 32, 32);
+        padding: 0rem 6rem;
+        position: relative;
 
         .listFilm{
-  
+
           img{
-             
+            width: 100%;
+            height: 12rem;
           }
+          
           .titoloFilm{
             font-size: 14px;
             text-transform: uppercase;
@@ -86,7 +94,7 @@ main{
         color: white;
         font-weight: 600;
         padding: 0.5rem 3rem;
-        align-items: center;
+        margin: 3rem;
       }
   
 }

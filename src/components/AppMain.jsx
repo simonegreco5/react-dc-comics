@@ -12,29 +12,30 @@ export default function AppMain(){
            {/* jumbotron */}
            <div>
             <img src={Jumbotron} alt="" />
-           </div>
+           </div>          
 
-           {/* banner */}
-           <div className='banner'>
-            CURRENT SERIES
-           </div>
-
-           {/* film */}
+           {/* lista film */}
            <div className='film'>
-            <div className='row row-cols-md-4 row-cols-lg-6 g-4 p-3 mt-2'>
+
+            <div className='banner'>
+                CURRENT SERIES
+            </div>
+
+            <div className='row row-cols-md-4 row-cols-lg-6 g-4 mt-2'>
                 {
                     comics.map((element)=>(
                         
                         <div className="listFilm col" key={element.id}>
-                            <img className='' src={element.thumb} alt="" />  
+                            <img className='p-3' src={element.thumb} alt="" />  
                             <div className='titoloFilm'>{element.title}</div>
                         </div>
                     ))
                 } 
             </div>
-           </div>
 
                 <button className='bottone'>LOAD MORE</button>
+           </div>
+
   
         </main>
     )
