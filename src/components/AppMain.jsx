@@ -1,6 +1,6 @@
 // sezione import 
 import Jumbotron from '../assets/img/jumbotron.jpg'
-import comics from '../assets/comics'
+import comics from '../assets/array/comics'
 
 export default function AppMain(){
 

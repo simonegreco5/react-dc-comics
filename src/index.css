@@ -71,7 +71,7 @@ main{
       .film{
         text-align: center;
         background-color: rgb(32, 32, 32);
-        padding: 0rem 6rem;
+        padding: 0.1rem 6rem;
         position: relative;
 
         .listFilm{
@@ -79,6 +79,7 @@ main{
           img{
             width: 100%;
             height: 12rem;
+            object-fit: cover;
           }
           
           .titoloFilm{
@@ -131,17 +132,20 @@ footer{
 
   .linkSection{
     background-image: url('./assets/img/footer-bg.jpg');
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
     display: flex;
 
+    
     div{
       display: flex;
       flex-direction: column;
-      
       padding: 1rem;
-
+      
       h3{
         color: white;
         font-size: 1.25rem;
+        font-weight: 600;
       }
       a{
         color: rgb(207, 207, 210);
@@ -151,6 +155,23 @@ footer{
     }
   }
 
+  /* .dcComics{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .shop{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .dc{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .sites{
+    grid-column: 3;
+    grid-row: 1;
+  } */
+  
   .socialBar{
     background-color: rgb(51, 51, 51);
     display: flex;

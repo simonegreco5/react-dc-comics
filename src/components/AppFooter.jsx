@@ -12,6 +12,13 @@ import Youtube from '../assets/img/footer-youtube.png'
 import Pinterest from '../assets/img/footer-pinterest.png'
 import Periscope from '../assets/img/footer-periscope.png'
 
+// sezione import array.js
+import dcComicsList from '../assets/array/dcComicsArr'
+import shopList from '../assets/array/shopArr'
+import dcList from '../assets/array/dcArr'
+import sitesList from '../assets/array/sitesArr'
+
+
 export default function AppFooter(){
 
     return(
@@ -45,40 +52,35 @@ export default function AppFooter(){
             <section className='linkSection'>
                 <div>
                     <h3 className='dcComics'>DC COMICS</h3>
-                    <a href="">Characters</a>
-                    <a href="">Comics</a>
-                    <a href="">Movies</a>
-                    <a href="">TV</a>
-                    <a href="">Games</a>
-                    <a href="">Videos</a>
-                    <a href="">News</a>
+                    {
+                        dcComicsList.map((element)=>(
+                            <a href="" key={element.id}>{element.nome}</a>
+                        ))
+                    }
                 </div>
                 <div>
                     <h3 className='shop'>SHOP</h3>
-                    <a href="">Shop DC</a>
-                    <a href="">Shop DC Collect</a>
+                    {
+                        shopList.map((element)=>(
+                            <a href="" key={element.id}>{element.nome}</a>
+                        ))
+                    }
                 </div>
                 <div>
                     <h3 className='dc'>DC</h3>
-                    <a href="">Term Of Use</a>
-                    <a href="">Privacy Policy</a>
-                    <a href="">Ad Choices</a>
-                    <a href="">Advertising</a>
-                    <a href="">Jobs</a>
-                    <a href="">Subscriptions</a>
-                    <a href="">Talent Workshops</a>
-                    <a href="">CPSC Certificates</a>
-                    <a href="">Ratings</a>
-                    <a href="">Shop Help</a>
-                    <a href="">Contact Us</a>
+                    {
+                        dcList.map((element)=>(
+                            <a href="" key={element.id}>{element.nome}</a>
+                        ))
+                    }
                 </div>
                 <div>
                     <h3 className='sites'>SITES</h3>
-                    <a href="">DC</a>
-                    <a href="">MAD Magazine</a>
-                    <a href="">DC Kids</a>
-                    <a href="">DC Universe</a>
-                    <a href="">DC Power Visa</a>
+                    {
+                        sitesList.map((element)=>(
+                            <a href="" key={element.id}>{element.nome}</a>
+                        ))
+                    }
                 </div>
             </section>
 
@@ -94,7 +96,7 @@ export default function AppFooter(){
                     <a href=""><img src={Periscope} alt="" /></a>
                 </div>
             </section>
-            
+
         </footer>
     )
 }
