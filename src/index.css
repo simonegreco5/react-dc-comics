@@ -135,48 +135,48 @@ footer{
     overflow: hidden;
     background-image: url('./assets/img/footer-bg.jpg');
     max-height: 17rem;
-  }
 
-  .contenitoreF{
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .linkF{
-    display: flex;
-
-    div{
+    .contenitoreF{
       display: flex;
-      flex-direction: column;
-      padding: 1rem 0rem;
-      padding-left: 1rem;
-    }
-  
-      h3{
-        color: white;
-        font-size: 1.25rem;
-        font-weight: 600;
-      }
-      a{
-        color: rgb(207, 207, 210);
-        text-decoration: none;
-        font-size: 0.7rem;
-      }
-  }
-  
-  .shop{
-    margin-top: 1rem;
-  }
+      justify-content: space-around;
 
-  .logoBg{
+      .linkF{
+        display: flex;
+    
+        div{
+          display: flex;
+          flex-direction: column;
+          padding: 1rem 0rem;
+          padding-left: 1rem;
+        }
+      
+          h3{
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+          a{
+            color: rgb(207, 207, 210);
+            text-decoration: none;
+            font-size: 0.7rem;
+          }
+      }
 
-    img{
-      position: absolute;
-      top: 60;
-      left: 50%;
-      transform: translateY(-30%);
+      .shop{
+        margin-top: 1rem;
+      }
+    
+      .logoBg{
+    
+        img{
+          position: absolute;
+          top: 60;
+          left: 50%;
+          transform: translateY(-30%);
+        }
+      }
     }
-  }
+  }  
   
   .socialBar{
     background-color: rgb(51, 51, 51);
