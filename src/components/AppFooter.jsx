@@ -18,6 +18,9 @@ import shopList from '../assets/array/shopArr'
 import dcList from '../assets/array/dcArr'
 import sitesList from '../assets/array/sitesArr'
 
+// sezione import logo background
+import dcLogoBg from '../assets/img/dc-logo-bg.png'
+
 
 export default function AppFooter(){
 
@@ -50,37 +53,53 @@ export default function AppFooter(){
 
             {/* sezione info con logo in background */}
             <section className='linkSection'>
-                <div>
-                    <h3 className='dcComics'>DC COMICS</h3>
-                    {
-                        dcComicsList.map((element)=>(
-                            <a href="" key={element.id}>{element.nome}</a>
-                        ))
-                    }
-                </div>
-                <div>
-                    <h3 className='shop'>SHOP</h3>
-                    {
-                        shopList.map((element)=>(
-                            <a href="" key={element.id}>{element.nome}</a>
-                        ))
-                    }
-                </div>
-                <div>
-                    <h3 className='dc'>DC</h3>
-                    {
-                        dcList.map((element)=>(
-                            <a href="" key={element.id}>{element.nome}</a>
-                        ))
-                    }
-                </div>
-                <div>
-                    <h3 className='sites'>SITES</h3>
-                    {
-                        sitesList.map((element)=>(
-                            <a href="" key={element.id}>{element.nome}</a>
-                        ))
-                    }
+                <div className='contenitoreF'>
+
+                    {/* link */}
+                    <div className='linkF'>
+
+                        {/* dc comics + shop */}
+                        <div>
+                            <h3 className='dcComics'>DC COMICS</h3>
+                            {
+                                dcComicsList.map((element)=>(
+                                    <a href="" key={element.id}>{element.nome}</a>
+                                ))
+                            }
+                            <h3 className='shop'>SHOP</h3>
+                            {
+                                shopList.map((element)=>(
+                                    <a href="" key={element.id}>{element.nome}</a>
+                                ))
+                            }
+                        </div>
+
+                        {/* dc */}
+                        <div>
+                            <h3 className='dc'>DC</h3>
+                            {
+                                dcList.map((element)=>(
+                                    <a href="" key={element.id}>{element.nome}</a>
+                                ))
+                            }
+                        </div>
+
+                        {/* sites */}
+                        <div>
+                            <h3 className='sites'>SITES</h3>
+                            {
+                                sitesList.map((element)=>(
+                                    <a href="" key={element.id}>{element.nome}</a>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                    {/* dc logo background */}
+                    <div className='logoBg'>
+                       <img src={dcLogoBg} alt="" /> 
+                    </div>
+
                 </div>
             </section>
 
