@@ -27,32 +27,34 @@ export default function AppFooter(){
     return(
         <footer>
 
-            {/* barra orizzontale blu */}
-            <section className='buyBar'>
-                <div>
+               {/* barra orizzontale blu */}
+               <section className='buyBar'>
+                
+                    <div>
                     <img src={BuyDigital} alt="" />
                     <a href="">digital comics</a>
-                </div>
-                <div>
+                    </div>
+                    <div>
                     <img src={BuyMerch} alt="" />
                     <a href="">dc merchandise</a>
-                </div>
-                <div>
+                    </div>
+                    <div>
                     <img src={BuySub} alt="" />
                     <a href="">subscription</a>
-                </div>
-                <div>
+                    </div>
+                    <div>
                     <img src={BuyShop} alt="" />
                     <a href="">comic shop locator</a>
-                </div>
-                <div>
+                    </div>
+                    <div>
                     <img src={BuyVisa} alt="" />
                     <a href="">dc power visa</a>
-                </div>
-            </section>
+                    </div>
+                
+               </section>
 
-            {/* sezione info con logo in background */}
-            <section className='linkSection'>
+               {/* sezione info con logo in background */}
+               <section className='linkSection'>
                 <div className='contenitoreF'>
 
                     {/* link */}
@@ -101,10 +103,10 @@ export default function AppFooter(){
                     </div>
 
                 </div>
-            </section>
+               </section>
 
-            {/* sezione accesso + social */}
-            <section className='socialBar'>
+               {/* sezione accesso + social */}
+               <section className='socialBar'>
                 <button><div>SIGN-UP NOW!</div></button>
                 <div className='icon'>
                     <div>FOLLOW US</div>
@@ -114,7 +116,7 @@ export default function AppFooter(){
                     <a href=""><img src={Pinterest} alt="" /></a>
                     <a href=""><img src={Periscope} alt="" /></a>
                 </div>
-            </section>
+               </section>  
 
         </footer>
     )
