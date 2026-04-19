@@ -65,20 +65,20 @@ main{
         position: absolute;
         translate: -50% -50%;
         top: 0;
-        left: 15%;
+        left: 21%;
       }
 
       .film{
         text-align: center;
         background-color: rgb(32, 32, 32);
-        padding: 0.1rem 11rem;
+        padding: 0.1rem 10rem;
         position: relative;
 
         .listFilm{
 
           img{
             width: 100%;
-            height: 10rem;
+            height: 12rem;
             object-fit: cover;
           }
           

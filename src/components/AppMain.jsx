@@ -21,7 +21,7 @@ export default function AppMain(){
                 CURRENT SERIES
             </div>
 
-            <div className='row row-cols-md-4 row-cols-lg-6 g-4 mt-2'>
+            <div className='row row-cols-md-4 row-cols-lg-6 g-0 mt-4'>
                 {
                     comics.map((element)=>(
                         
