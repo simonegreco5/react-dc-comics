@@ -2,6 +2,8 @@
 import Jumbotron from '../assets/img/jumbotron.jpg'
 import comics from '../assets/array/comics'
 
+import AppFilm from './AppFilm'
+
 export default function AppMain(){
 
 
@@ -23,12 +25,15 @@ export default function AppMain(){
 
             <div className='row row-cols-md-4 row-cols-lg-6 g-0 mt-4'>
                 {
-                    comics.map((element)=>(
-                        
-                        <div className="listFilm col" key={element.id}>
-                            <img className='p-3' src={element.thumb} alt="" />  
-                            <div className='titoloFilm'>{element.title}</div>
-                        </div>
+                    comics.map((comic)=>(
+
+                        <AppFilm 
+                        key={comic.id} 
+                        // props={props}
+                        src={comic.thumb} 
+                        title={comic.title}
+                        />
+                         
                     ))
                 } 
             </div>
