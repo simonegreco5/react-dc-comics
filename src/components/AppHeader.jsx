@@ -1,15 +1,15 @@
 // sezione import 
-import AppLogo from '../assets/img/dc-logo.png'
-import menu from '../assets/array/menu'
+// import AppLogo from '../assets/img/dc-logo.png' // -> centralizzata in /public
 
-export default function AppHeader(){
+export default function AppHeader({menu}){
 
     return(
 
         <header>
 
             {/* logo */}
-            <img src={AppLogo} alt="" />
+            <img src='/img/dc-logo.png' alt="" />
+
 
             {/* nav */}
             <nav>

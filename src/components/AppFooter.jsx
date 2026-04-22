@@ -1,28 +1,14 @@
 // sezione import buy.png
-import BuyDigital from '../assets/img/buy-comics-digital-comics.png'
-import BuyMerch from '../assets/img/buy-comics-merchandise.png'
-import BuySub from '../assets/img/buy-comics-subscriptions.png'
-import BuyShop from '../assets/img/buy-comics-shop-locator.png'
-import BuyVisa from '../assets/img/buy-dc-power-visa.svg'
+// centralizzata in /public <-
 
 // sezione import social.png
-import Facebook from '../assets/img/footer-facebook.png'
-import Twitter from '../assets/img/footer-twitter.png'
-import Youtube from '../assets/img/footer-youtube.png'
-import Pinterest from '../assets/img/footer-pinterest.png'
-import Periscope from '../assets/img/footer-periscope.png'
-
-// sezione import array.js
-import dcComicsList from '../assets/array/dcComicsArr'
-import shopList from '../assets/array/shopArr'
-import dcList from '../assets/array/dcArr'
-import sitesList from '../assets/array/sitesArr'
+// centralizzata in /public <-
 
 // sezione import logo background
-import dcLogoBg from '../assets/img/dc-logo-bg.png'
+// centralizzata in /public  <-
 
 
-export default function AppFooter(){
+export default function AppFooter({dcComicsList, shopList, dcList, sitesList}){
 
     return(
         <footer>
@@ -31,23 +17,23 @@ export default function AppFooter(){
                <section className='buyBar'>
                 
                     <div>
-                    <img src={BuyDigital} alt="" />
+                    <img src='/img/buy-comics-digital-comics.png' alt="" />
                     <a href="">digital comics</a>
                     </div>
                     <div>
-                    <img src={BuyMerch} alt="" />
+                    <img src='/img/buy-comics-merchandise.png' alt="" />
                     <a href="">dc merchandise</a>
                     </div>
                     <div>
-                    <img src={BuySub} alt="" />
+                    <img src='/img/buy-comics-subscriptions.png' alt="" />
                     <a href="">subscription</a>
                     </div>
                     <div>
-                    <img src={BuyShop} alt="" />
+                    <img src='/img/buy-comics-shop-locator.png' alt="" />
                     <a href="">comic shop locator</a>
                     </div>
                     <div>
-                    <img src={BuyVisa} alt="" />
+                    <img src='/img/buy-dc-power-visa.svg' alt="" />
                     <a href="">dc power visa</a>
                     </div>
                 
@@ -99,7 +85,7 @@ export default function AppFooter(){
 
                     {/* dc logo background */}
                     <div className='logoBg'>
-                       <img src={dcLogoBg} alt="" /> 
+                       <img src='/img/dc-logo-bg.png' alt="" /> 
                     </div>
 
                 </div>
@@ -110,11 +96,11 @@ export default function AppFooter(){
                 <button><div>SIGN-UP NOW!</div></button>
                 <div className='icon'>
                     <div>FOLLOW US</div>
-                    <a href=""><img src={Facebook} alt="" /></a>
-                    <a href=""><img src={Twitter} alt="" /></a>
-                    <a href=""><img src={Youtube} alt="" /></a>
-                    <a href=""><img src={Pinterest} alt="" /></a>
-                    <a href=""><img src={Periscope} alt="" /></a>
+                    <a href=""><img src='/img/footer-facebook.png' alt="" /></a> 
+                    <a href=""><img src='/img/footer-twitter.png' alt="" /></a>
+                    <a href=""><img src='/img/footer-youtube.png' alt="" /></a>
+                    <a href=""><img src='/img/footer-pinterest.png' alt="" /></a>
+                    <a href=""><img src='/img/footer-periscope.png' alt="" /></a>
                 </div>
                </section>  
 

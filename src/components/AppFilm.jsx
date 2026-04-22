@@ -1,4 +1,4 @@
-export default function AppFilm ({title, src}){
+export default function AppFilm ({title, src, price, badge}){
 
     // console.log(props)
     // const {title, src} = props -> altrienti li richiamo direttamente sopra
@@ -7,7 +7,9 @@ export default function AppFilm ({title, src}){
         <>
         <div className="listFilm col">
             <img className='p-3' src={src} alt="" />  
-            <div className='titoloFilm'>{title}</div>
+            {badge && <div className="badgeFilm">{badge}</div>}
+            {title && <div className='titoloFilm'>{title}</div>}
+            {price && <div>{price}</div>}
         </div>
         </>
     )

@@ -1,10 +1,8 @@
 // sezione import 
-import Jumbotron from '../assets/img/jumbotron.jpg'
-import comics from '../assets/array/comics'
-
+// import Jumbotron from '../assets/img/jumbotron.jpg' // -> centralizzata in /public
 import AppFilm from './AppFilm'
 
-export default function AppMain(){
+export default function AppMain({comics}){
 
 
 
@@ -13,7 +11,7 @@ export default function AppMain(){
            
            {/* jumbotron */}
            <div>
-            <img src={Jumbotron} alt="" />
+            <img src='/img/jumbotron.jpg' alt="" />
            </div>          
 
            {/* lista film */}
@@ -32,6 +30,8 @@ export default function AppMain(){
                         // props={props}
                         src={comic.thumb} 
                         title={comic.title}
+                        price={comic.price}
+                        badge={comic.badge}
                         />
                          
                     ))
